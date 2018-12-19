@@ -1,0 +1,60 @@
+@import url('/fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i');
+@import url('//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-attachment: fixed;
+  background-size: cover;
+  overflow-x: hidden;
+  font-size: 100%;
+  color: #24292E;
+  font-family: 'Poppins', sans-serif; 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.job{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.center-txt{
+  text-align: center;
+}
+
+body::-webkit-scrollbar{
+  width: 8px;
+  background: #324A69;
+}
+
+body::-webkit-scrollbar-thumb{
+  background: #B1BAA3;
+  border-radius: 5px;
+}
+
+@font-face{
+  font-family:'Aquino';
+  font-weight:normal;
+  font-style:normal;
+  src:url("./fonts/Aquino-Demo.ttf");
+  src:url("./fonts/Aquino-Demo.ttf") format("truetype")
+}
+
+h1, h2 {
+  font-family: 'Aquino', 'Helvetica Neue', sans-serif;
+  font-size: 60px !important;
+}
+
+.paragraph{
+    margin-bottom: 13px;
+    font-weight: 300;
+    text-align: justify;
+    line-height: 24px;
+}

@@ -1,0 +1,14 @@
+.button {
+  display: inline-block;
+  padding: 6px;
+  width: 128px;
+  font-weight: 300;
+  border: 1px solid rgba(24, 16, 16, .7);
+  color: rgb(24, 16, 16);
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+  margin-top: 24px;
+  background-color: #fff;
+}
