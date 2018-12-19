@@ -3,7 +3,7 @@
   "description": "Mini website using React.js",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://jmbl1685.github.io",
+  "homepage": "https://jmbl1685.github.io/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
