@@ -37,6 +37,13 @@
   background-blend-mode: multiply; */  
 }
 
+#about-me{
+  -webkit-animation: pulse 2s infinite;
+  animation: pulse 2s infinite;
+  z-index: 11;
+  position: relative;
+  cursor: pointer;
+}
 
 .header .textos {
   margin-top: 152px;

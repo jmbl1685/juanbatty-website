@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 
 /* Components */
 import Home from './components/home/Home';
@@ -8,6 +9,14 @@ import Skills from './components/skills/Skills';
 import Repositories from './components/repositories/Repositories';
 
 export default function App() {
+
+  useEffect(() => {   
+			AOS.init({
+				easing: 'ease-out-back',
+				duration: 1000
+			})
+  })
+
   return (
     <div>
       <Home></Home>

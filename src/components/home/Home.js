@@ -1,5 +1,6 @@
 import React from 'react'
 
+import { ScrollAnimation } from '../../utils'
 import './Home.css'
 import arrow_down from '../../img/arrow_down.svg'
 
@@ -40,16 +41,16 @@ export default function Home() {
     <div>
       <div className="header">
         <div className="textos">
-          <h1 className="titulo">{HomeInfo.title}</h1>
-          <h3 className="subtitulo job">{HomeInfo.description}</h3>
-          {
-            HomeInfo.accounts.map((item, index) => {
-              return <a key={index} href={item.url} target="_blank" className="icon"><i className={item.iconClass}></i></a>
-            })
-          }
-          <div><br/>
-            <img height="22" width="22" src={arrow_down} alt="arrow_down" />
-          </div>
+          <h1 className="titulo" data-aos="zoom-in">{HomeInfo.title}</h1>
+          <h3 className="subtitulo job" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">{HomeInfo.description}</h3>
+          <div data-aos="flip-up" data-aos-easing="ease" data-aos-delay="800">
+            {
+              HomeInfo.accounts.map((item, index) => {
+                return <a key={index} href={item.url} target="_blank" className="icon"><i className={item.iconClass}></i></a>
+              })
+            }
+          </div><br />
+          <img onClick={(event) => ScrollAnimation(event)} height="22" width="22" src={arrow_down} alt="arrow_down" id="about-me" />
         </div>
         <div className="sesgoabajo"></div>
       </div>

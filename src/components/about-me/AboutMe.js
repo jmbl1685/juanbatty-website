@@ -14,7 +14,7 @@ export default function AboutMe() {
   }
 
   return (
-    <div className="container">
+    <div className="container about-me" data-aos="fade-up">
       <section>
         <div className="center-txt">
           <h2>{AboutUsInfo.title}</h2>

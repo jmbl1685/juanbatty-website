@@ -5,6 +5,7 @@
   "private": true,
   "homepage": "https://jmbl1685.github.io/",
   "dependencies": {
+    "aos": "^2.3.4",
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
     "react": "^16.7.0-alpha.0",

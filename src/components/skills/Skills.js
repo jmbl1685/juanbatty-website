@@ -75,18 +75,18 @@ export default function Skills() {
   }
 
   return (
-    <div className="center-txt">
+    <div className="center-txt" data-aos="fade-up">
       <section>
         <div>
           <h2>{AboutUsInfo.title}</h2>
         </div>
       </section>
-      <div className="container">
+      <div className="container" >
         <div className="row">
           {
             AboutUsInfo.technologies.map((item, index) => {
               return (
-                <div key={index} className="col-sm-4 col-md-3 col-lg-3 col-xl-3">
+                <div data-aos="flip-down" key={index} className="col-sm-4 col-md-3 col-lg-3 col-xl-3">
                   <img alt={item.name} className="logo-technology" src={item.logo} />
                   <p>{item.name}</p>
                 </div>

@@ -16,7 +16,7 @@ export default function Repositories() {
   }, [])
 
   return (
-    <div className="center-txt">
+    <div className="center-txt" data-aos="fade-up">
       <section>
         <div>
           <h2>REPOSITORIOS (GITHUB)</h2>
