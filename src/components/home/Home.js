@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ScrollAnimation, DisplayStyleValue } from '../../utils'
+import { ScrollAnimation, DisplayStyleValue } from '../../utils/utils'
 import './Home.css'
 import arrow_down from '../../img/arrow_down.svg'
 
@@ -47,18 +47,17 @@ export default function Home() {
 
       <div id="building" >
         <div>
-          <a className="icon"><i className="fas fa-hammer"></i> Página en construcción</a>
+          <span className="icon build-ms"><i className="fas fa-hammer"></i> Página en construcción</span>
         </div>
       </div>
 
       <div id="fixed-accounts" >
       <div>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-github github"></i></a>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-twitter twitter"></i></a>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-linkedin linkedin"></i></a>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-youtube youtube"></i></a>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-instagram instagram"></i></a>
-        <a href="https://github.com/jmbl1685" className="icon"><i className="far fa-envelope envelope"></i></a>
+      {
+        HomeInfo.accounts.map((item, index) => {
+          return <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="icon"><i className={item.iconClass}></i></a>
+        })
+      }
       </div>
     </div>
 
@@ -69,13 +68,13 @@ export default function Home() {
           <div data-aos="flip-up" data-aos-easing="ease" data-aos-delay="800">
             {
               HomeInfo.accounts.map((item, index) => {
-                return <a key={index} href={item.url} target="_blank" className="icon"><i className={item.iconClass}></i></a>
+                return <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="icon"><i className={item.iconClass}></i></a>
               })
             }
           </div><br />
           <img onClick={(event) => ScrollAnimation(event)} height="22" width="22" src={arrow_down} alt="arrow_down" id="about-me" />
         </div>
-        <div className="sesgoabajo"></div>
+        
       </div>
     </div>
   )

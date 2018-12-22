@@ -35,6 +35,8 @@
   text-align: center;
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;  
+  -webkit-clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 66%, 0 100%, 0 0);
 }
 
 #about-me{
@@ -73,15 +75,6 @@
   font-size: 50px
 }
 
-.sesgoabajo {
-  z-index: 10;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  border-width: 0 0 35vh 100vw;
-  border-style: solid;
-  border-color: transparent transparent #FFFFFF transparent;
-}
 
 .fab, .far{
   color: #fff;
@@ -122,6 +115,11 @@
   right: 0;
   transition: opacity 0.6s ease-out;
   opacity: 0; 
+}
+
+.build-ms{
+  color: #FFFFFF;
+  font-weight: bold;
 }
 
 #building div{

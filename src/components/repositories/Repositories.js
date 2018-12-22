@@ -29,7 +29,7 @@ export default function Repositories() {
             data.map((item, index) => {
               return (
                 <div key={item.id} className="col-12 col-sm-6  col-md-4 col-lg-4 col-xl-3 repo-card">
-                  <a href={item.html_url} target="_blank">{item.name}</a>
+                  <a href={item.html_url} target="_blank" rel="noopener noreferrer">{item.name}</a>
                 </div>
               )
             })
