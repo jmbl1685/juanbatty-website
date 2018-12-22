@@ -1,4 +1,4 @@
-'use strict';function polyfill(){var w=window;var d=document;if('scrollBehavior' in d.documentElement.style&&w.__forceSmoothScrollPolyfill__!==!0){return}
+function polyfill(){var w=window;var d=document;if('scrollBehavior' in d.documentElement.style&&w.__forceSmoothScrollPolyfill__!==!0){return}
 var Element=w.HTMLElement||w.Element;var SCROLL_TIME=468;var original={scroll:w.scroll||w.scrollTo,scrollBy:w.scrollBy,elementScroll:Element.prototype.scroll||scrollElement,scrollIntoView:Element.prototype.scrollIntoView};var now=w.performance&&w.performance.now?w.performance.now.bind(w.performance):Date.now;function isMicrosoftBrowser(userAgent){var userAgentPatterns=['MSIE ','Trident/','Edge/'];return new RegExp(userAgentPatterns.join('|')).test(userAgent)}
 var ROUNDING_TOLERANCE=isMicrosoftBrowser(w.navigator.userAgent)?1:0;function scrollElement(x,y){this.scrollLeft=x;this.scrollTop=y}
 function ease(k){return 0.5*(1-Math.cos(Math.PI*k))}

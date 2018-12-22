@@ -7,7 +7,8 @@ export default function Repositories() {
   const [data, setData] = useState([])
 
   async function fetchAPI() {
-    const result = await axios('https://api.github.com/users/jmbl1685/repos?per_page=200')
+    const url = 'https://api.github.com/users/jmbl1685/repos?per_page=200'
+    const result = await axios(url)
     setData(result.data)
   }
 
@@ -19,7 +20,7 @@ export default function Repositories() {
     <div className="center-txt" data-aos="fade-up">
       <section>
         <div>
-          <h2>REPOSITORIOS (GITHUB)</h2>
+          <h2>Repositorio (GitHub)</h2>
         </div>
       </section>
       <div className="container center">

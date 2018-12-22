@@ -12,6 +12,7 @@ body {
   font-family: 'Poppins', sans-serif; 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #333338;
 }
 
 .job{
@@ -30,13 +31,14 @@ code {
 }
 
 body::-webkit-scrollbar{
-  width: 8px;
-  background: #324A69;
+  width: 12px;
+  background: #24292E;
 }
 
 body::-webkit-scrollbar-thumb{
-  background: #B1BAA3;
+  background: #F2BC39;
   border-radius: 5px;
+  border: 3px solid #24292E;
 }
 
 @font-face{
@@ -47,9 +49,21 @@ body::-webkit-scrollbar-thumb{
   src:url("./fonts/Aquino-Demo.ttf") format("truetype")
 }
 
+@font-face {
+  font-family: 'Circular';
+  src: url('./fonts/circular-bold-webfont.woff2') format('woff2'),
+       url('./fonts/circular-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 h1, h2 {
-  font-family: 'Aquino', 'Helvetica Neue', sans-serif;
-  font-size: 60px !important;
+  font-family: 'Circular', 'Helvetica Neue', sans-serif;
+  font-size: 4em !important;
+  letter-spacing: -.04em;
+  font-weight: 900;
+  line-height: 1.15;
 }
 
 .paragraph{

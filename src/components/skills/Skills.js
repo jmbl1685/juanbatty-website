@@ -4,72 +4,27 @@ import './Skills.css'
 export default function Skills() {
 
   const AboutUsInfo = {
-    title: "HABILIDADES",
-    technologies: [
+    title: "Habilidades",
+    skill_items: [
       {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/javascript.png",
-        name: "Javascript",
-        description: ""
+        logo: 'logo fas fa-paint-brush',
+        title: 'Desarrollo Front-End',
+        description: 'HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp'
       },
       {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/csharp.jpg",
-        name: "C#",
-        description: ""
+        logo: 'logo fas fa-hdd',
+        title: 'Desarrollo Back-End',
+        description: 'C#, ASP.NET, Node.js, Express.js, Python, Django, Flask'
       },
       {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/azure.png",
-        name: "Microsoft Azure",
-        description: ""
+        logo: 'logo fas fa-database',
+        title: 'Base de datos',
+        description: 'SQL Server, MySQL, MongoDB, Firebase'
       },
       {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/nodejs.png",
-        name: "Node.js",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/angular.png",
-        name: "Angular",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/reactjs.png",
-        name: "React.js",
-        description: ""
-      }, 
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/aspnet.gif",
-        name: "ASP.NET Framework",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/sass.svg",
-        name: "Sass ",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/gulp.png",
-        name: "Gulp",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/mongodb.png",
-        name: "MongoDB",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/firebase.png",
-        name: "Firebase",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/sqlserver.png",
-        name: "SQL Server",
-        description: ""
-      },
-      {
-        logo: "https://jmbl1685.github.io/rfm-tech/img/mysql.png",
-        name: "MySQL",
-        description: ""
+        logo: 'logo fas fa-tasks',
+        title: 'DevOps',
+        description: 'Microsoft Azure, AWS, Travis CI, Azure Pipelines, Test Unitarios, SEO, etc.'
       }
     ]
   }
@@ -84,13 +39,14 @@ export default function Skills() {
       <div className="container" >
         <div className="row">
           {
-            AboutUsInfo.technologies.map((item, index) => {
-              return (
-                <div data-aos="flip-down" key={index} className="col-sm-4 col-md-3 col-lg-3 col-xl-3">
-                  <img alt={item.name} className="logo-technology" src={item.logo} />
-                  <p>{item.name}</p>
+            AboutUsInfo.skill_items.map((item, index) => {
+              return <div key={index} className="center-txt col-lg-3 col-md-6">
+                <div className="icon-container">
+                  <i className={item.logo}></i>
                 </div>
-              )
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             })
           }
         </div>

@@ -33,8 +33,8 @@
   overflow: hidden;
   color: #fff;
   text-align: center;
-/* background-color: rgba(36, 78, 141, 0.616);
-  background-blend-mode: multiply; */  
+  background-color: rgba(0, 0, 0, 0.5);
+  background-blend-mode: multiply;  
 }
 
 #about-me{
@@ -45,18 +45,22 @@
   cursor: pointer;
 }
 
-.header .textos {
+.header .m-top {
   margin-top: 152px;
 }
 
-.header .titulo {
-  font-size: 85px;
+.header .title {
+  font-family: 'Aquino';
+  font-size: 4em !important;
+  margin: 20px;
+  margin-bottom: 30px;
 }
 
-.header .subtitulo {
+.header .subtitle {
   font-size: 42px;
   font-weight: 300;
   margin-bottom: 32px;
+  margin: 10px;
 }
 
 .header .icon {
@@ -76,7 +80,7 @@
   left: 0;
   border-width: 0 0 35vh 100vw;
   border-style: solid;
-  border-color: transparent transparent #fff transparent;
+  border-color: transparent transparent #FFFFFF transparent;
 }
 
 .fab, .far{
@@ -106,6 +110,106 @@
 
 .envelope:hover{
   color: #F48939
+}
+
+#building{
+  position: fixed;
+  display: block;
+  background-color: #FD4136;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.6s ease-out;
+  opacity: 0; 
+}
+
+#building div{
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+#building a {
+  text-decoration: none;
+  padding: 8px 8px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+#fixed-accounts{
+  position: fixed;
+  display: block;
+  background-color: #34343bc7;
+  z-index: 100;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: opacity 0.6s ease-out;
+  opacity: 0; 
+}
+
+#fixed-accounts div{
+  right: 0;
+  left: 0;
+  text-align: center;
+}
+
+#fixed-accounts a {
+  text-decoration: none;
+  padding: 8px 8px;
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+
+@media only screen and (max-width: 700px){
+
+  .header .m-top {
+    margin-top: 80px;
+  }
+
+}
+
+@media only screen and (max-width: 488px){
+
+  .header .m-top {
+    margin-top: 152px;
+  }
+  .header .title {
+    font-size: 3.5em !important;
+  }
+  
+  .header .subtitle {
+    font-size: 30px;
+  }
+
+  .header .icon {
+    font-size: 40px
+  }
+
+}
+
+@media only screen and (max-width: 433px){
+
+  .header .m-top {
+    margin-top: 200px;
+  }
+  .header .title {
+    font-size: 2.5em !important;
+    margin-bottom: 0;
+  }
+  
+  .header .subtitle {
+    font-size: 20px;
+  }
+
+  .header .icon {
+    font-size: 25px
+  }
+
 }
 
 

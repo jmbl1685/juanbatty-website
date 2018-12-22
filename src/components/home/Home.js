@@ -1,10 +1,15 @@
 import React from 'react'
 
-import { ScrollAnimation } from '../../utils'
+import { ScrollAnimation, DisplayStyleValue } from '../../utils'
 import './Home.css'
 import arrow_down from '../../img/arrow_down.svg'
 
 export default function Home() {
+
+  window.onscroll = () => {
+    DisplayStyleValue(500, document.getElementById('fixed-accounts'))
+    DisplayStyleValue(500, document.getElementById('building'))
+  }
 
   const HomeInfo = {
     title: 'Juan Batty',
@@ -39,10 +44,28 @@ export default function Home() {
 
   return (
     <div>
+
+      <div id="building" >
+        <div>
+          <a className="icon"><i className="fas fa-hammer"></i> Página en construcción</a>
+        </div>
+      </div>
+
+      <div id="fixed-accounts" >
+      <div>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-github github"></i></a>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-twitter twitter"></i></a>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-linkedin linkedin"></i></a>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-youtube youtube"></i></a>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="fab fa-instagram instagram"></i></a>
+        <a href="https://github.com/jmbl1685" className="icon"><i className="far fa-envelope envelope"></i></a>
+      </div>
+    </div>
+
       <div className="header">
-        <div className="textos">
-          <h1 className="titulo" data-aos="zoom-in">{HomeInfo.title}</h1>
-          <h3 className="subtitulo job" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">{HomeInfo.description}</h3>
+        <div className="m-top">
+          <h1 className="title" data-aos="zoom-in">{HomeInfo.title}</h1>
+          <h3 className="subtitle job" data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400">{HomeInfo.description}</h3>
           <div data-aos="flip-up" data-aos-easing="ease" data-aos-delay="800">
             {
               HomeInfo.accounts.map((item, index) => {

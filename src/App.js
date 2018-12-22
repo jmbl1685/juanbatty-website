@@ -7,6 +7,7 @@ import AboutMe from './components/about-me/AboutMe';
 import ContactUs from './components/contact-me/ContactMe';
 import Skills from './components/skills/Skills';
 import Repositories from './components/repositories/Repositories';
+import Footer from './components/footer/Footer';
 
 export default function App() {
 
@@ -24,6 +25,7 @@ export default function App() {
       <Skills></Skills>
       <ContactUs></ContactUs>
       <Repositories></Repositories>
+      <Footer></Footer>
     </div>
   );
 }
