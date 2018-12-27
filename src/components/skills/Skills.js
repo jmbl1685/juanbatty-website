@@ -34,9 +34,10 @@ export default function Skills() {
       <section>
         <div>
           <h2>{AboutUsInfo.title}</h2>
+          <div className="line-dv"></div>
         </div>
       </section>
-      <div className="container" >
+      <div className="container mb" >
         <div className="row">
           {
             AboutUsInfo.skill_items.map((item, index) => {

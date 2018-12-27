@@ -1,0 +1,35 @@
+.contact-me {
+  background-attachment: fixed;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  text-align: center;
+  background-color: #F05F40;
+  -webkit-clip-path: polygon(100% 0,100% 70%,0 100%,0 30%);
+  clip-path: polygon(100% 0,100% 70%,0 100%,0 30%);
+  margin-top: 10px;
+}
+
+.line-white{
+  background-color: #FFFFFF !important;
+}
+
+.contact-padding{
+  padding: 100px;
+  margin: 0 auto;
+}
+
+
+@media only screen and (max-width: 450px){
+
+  .contact-padding{
+    padding: 10px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+
+}

@@ -8,7 +8,6 @@ export default function Home() {
 
   window.onscroll = () => {
     DisplayStyleValue(500, document.getElementById('fixed-accounts'))
-    DisplayStyleValue(500, document.getElementById('building'))
   }
 
   const HomeInfo = {
@@ -45,21 +44,15 @@ export default function Home() {
   return (
     <div>
 
-      <div id="building" >
+      <div id="fixed-accounts" >
         <div>
-          <span className="icon build-ms"><i className="fas fa-hammer"></i> Página en construcción</span>
+          {
+            HomeInfo.accounts.map((item, index) => {
+              return <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="icon"><i className={item.iconClass}></i></a>
+            })
+          }
         </div>
       </div>
-
-      <div id="fixed-accounts" >
-      <div>
-      {
-        HomeInfo.accounts.map((item, index) => {
-          return <a key={index} href={item.url} target="_blank" rel="noopener noreferrer" className="icon"><i className={item.iconClass}></i></a>
-        })
-      }
-      </div>
-    </div>
 
       <div className="header">
         <div className="m-top">
@@ -74,7 +67,7 @@ export default function Home() {
           </div><br />
           <img onClick={(event) => ScrollAnimation(event)} height="22" width="22" src={arrow_down} alt="arrow_down" id="about-me" />
         </div>
-        
+
       </div>
     </div>
   )

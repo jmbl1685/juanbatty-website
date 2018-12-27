@@ -17,15 +17,18 @@ export default function AboutMe() {
       <section>
         <div className="center-txt">
           <h2>{AboutUsInfo.title}</h2>
-          {
-            AboutUsInfo.paragraph.map((item, index) => {
-              return (
-                <div key={index}>
-                  <h3>{item}</h3>
-                </div>
-              )
-            })
-          }
+          <div className="line-dv"></div>
+          <div className="mb">
+            {
+              AboutUsInfo.paragraph.map((item, index) => {
+                return (
+                  <div key={index}>
+                    <p>{item}</p>
+                  </div>
+                )
+              })
+            }
+          </div>
         </div>
       </section>
     </div>
