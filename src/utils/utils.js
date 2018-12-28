@@ -1,7 +1,12 @@
+import { scroller } from 'react-scroll';
+
 export function ScrollAnimation(e) {
-  const classname = e.target.id
-  const scrollElement = document.querySelector(`.${classname}`)
-  scrollElement.scrollIntoView({ behavior: 'smooth' })
+    const name = e.target.id;
+    scroller.scrollTo(name, {
+        duration: 1500,
+        delay: 100,
+        smooth: true
+    });
 }
 
 export function DisplayStyleValue(value, element) {

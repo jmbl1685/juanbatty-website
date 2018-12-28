@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import AOS from 'aos';
 
-/* Components */
+
 import Home from './components/home/Home';
 import AboutMe from './components/about-me/AboutMe';
 import ContactUs from './components/contact-me/ContactMe';

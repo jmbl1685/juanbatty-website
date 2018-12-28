@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import { ScrollAnimation, DisplayStyleValue } from '../../utils/utils'
-import './Home.css'
-import arrow_down from '../../img/arrow_down.svg'
+import {  ScrollAnimation, DisplayStyleValue } from '../../utils/utils';
+import './Home.css';
+import arrow_down from '../../assets/img/arrow_down.svg';
 
 export default function Home() {
 

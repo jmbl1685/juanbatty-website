@@ -1,7 +1,7 @@
 @import url('//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i');
 @import url('//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800');
 
-@import url('./fonts/Avenir_W01.css');
+@import url('./assets/fonts/Avenir_W01.css');
 
 body {
   margin: 0;
@@ -49,14 +49,14 @@ body::-webkit-scrollbar-thumb{
   font-family:'Aquino';
   font-weight:normal;
   font-style:normal;
-  src:url("./fonts/Aquino-Demo.ttf");
-  src:url("./fonts/Aquino-Demo.ttf") format("truetype")
+  src:url("./assets/fonts/Aquino-Demo.ttf");
+  src:url("./assets/fonts/Aquino-Demo.ttf") format("truetype")
 }
 
 @font-face {
   font-family: 'Circular';
-  src: url('./fonts/circular-bold-webfont.woff2') format('woff2'),
-       url('./fonts/circular-bold-webfont.woff') format('woff');
+  src: url('./assets/fonts/circular-bold-webfont.woff2') format('woff2'),
+       url('./assets/fonts/circular-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import { Element } from 'react-scroll';
 import './AboutMe.css'
 
 export default function AboutMe() {
@@ -13,24 +14,26 @@ export default function AboutMe() {
   }
 
   return (
-    <div className="container about-me" data-aos="fade-up">
-      <section>
-        <div className="center-txt">
-          <h2>{AboutUsInfo.title}</h2>
-          <div className="line-dv"></div>
-          <div className="mb">
-            {
-              AboutUsInfo.paragraph.map((item, index) => {
-                return (
-                  <div key={index}>
-                    <p>{item}</p>
-                  </div>
-                )
-              })
-            }
+    <Element name="about-me"><br/>
+      <div className="container about-me" data-aos="fade-up">
+        <div>
+          <div className="center-txt">
+            <h2>{AboutUsInfo.title}</h2>
+            <div className="line-dv"></div>
+            <div className="mb">
+              {
+                AboutUsInfo.paragraph.map((item, index) => {
+                  return (
+                    <div key={index}>
+                      <p>{item}</p>
+                    </div>
+                  )
+                })
+              }
+            </div>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </Element>
   )
 }
