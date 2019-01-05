@@ -1,7 +1,6 @@
-@import url('//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i');
-@import url('//fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800');
+@import url("//fonts.googleapis.com/css?family=Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800|Kaushan+Script");
 
-@import url('./assets/fonts/Avenir_W01.css');
+@import url("./assets/fonts/Avenir_W01.css");
 
 body {
   margin: 0;
@@ -19,7 +18,7 @@ body {
   background: #f8f8fb;
 }
 
-.job{
+.job {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -30,84 +29,91 @@ code {
     monospace;
 }
 
-.center-txt{
+.center-txt {
   text-align: center;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   width: 12px;
   background: #202020;
 }
 
-body::-webkit-scrollbar-thumb{
-  background: #F05F40;
+body::-webkit-scrollbar-thumb {
+  background: #f05f40;
   border-radius: 5px;
   border: 3px solid #202020;
 }
 
-@font-face{
-  font-family:'Aquino';
-  font-weight:normal;
-  font-style:normal;
-  src:url("./assets/fonts/Aquino-Demo.ttf");
-  src:url("./assets/fonts/Aquino-Demo.ttf") format("truetype")
+@font-face {
+  font-family: "Aquino";
+  font-weight: normal;
+  font-style: normal;
+  src: url("./assets/fonts/Aquino-Demo.ttf");
+  src: url("./assets/fonts/Aquino-Demo.ttf") format("truetype");
 }
 
 @font-face {
-  font-family: 'Circular';
-  src: url('./assets/fonts/circular-bold-webfont.woff2') format('woff2'),
-       url('./assets/fonts/circular-bold-webfont.woff') format('woff');
+  font-family: "Circular";
+  src: url("./assets/fonts/circular-bold-webfont.woff2") format("woff2"),
+    url("./assets/fonts/circular-bold-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-
-h1, h2 {
+h1,
+h2 {
   font-size: 3em !important;
-  letter-spacing: -.04em;
+  letter-spacing: -0.04em;
   font-weight: 900;
   line-height: 1.15;
 }
 
-.line-dv{
-  background-color: #F05F40;
+.line-dv {
+  background-color: #f05f40;
   height: 3px;
   width: 200px;
   margin: 0 auto;
   margin-top: -35px;
 }
 
-.paragraph{
-    margin-bottom: 13px;
-    font-weight: 300;
-    text-align: justify;
-    line-height: 24px;
+.paragraph {
+  margin-bottom: 13px;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 24px;
 }
 
-.mb{
+.mb {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-
 @-webkit-keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
+    transform: translate(0, 10px);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}
 
 @keyframes pulse {
   0% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); }
+    transform: translate(0, 0);
+  }
   50% {
     -webkit-transform: translate(0, 10px);
-            transform: translate(0, 10px); }
+    transform: translate(0, 10px);
+  }
   100% {
     -webkit-transform: translate(0, 0);
-            transform: translate(0, 0); } }
+    transform: translate(0, 0);
+  }
+}

@@ -1,24 +1,26 @@
-import React from 'react'
-import './ContactMe.css'
+import React from "react";
+import "./ContactMe.css";
 
 export default function ContactMe() {
-
   const ContactInfo = {
-    title: 'Contáctame',
-    description: 'Si estás aquí y consideras que soy el indicado para ayudarte, claro que puedo hacerlo. Ponte en contacto conmigo.',
-    phone: '(+57) 3107075514'
-  }
+    title: "Contáctame",
+    description:
+      "Puedes comunicarte conmigo a través de mis redes sociales o escribiendome al siguiente número",
+    phone: "(+57) 3107075514"
+  };
 
   return (
-    <div className="center-txt contact-me mb" >
+    <div className="center-txt contact-me mb">
       <div className="contact-padding" data-aos="zoom-in">
         <h2>{ContactInfo.title}</h2>
-        <div className="line-dv line-white"></div>
-        <div className="mb">
-          <p>Si estás aquí y consideras que soy el indicado para ayudarte, claro que puedo hacerlo.<br></br> Ponte en contacto conmigo.</p>
-          <h3><i class="fab fa-whatsapp"></i> (+57) 3107075514</h3>
+        <div className="line-dv line-white" />
+        <div>
+          <p>{ContactInfo.description}</p>
+          <h3>
+            <i className="fab fa-whatsapp" /> {ContactInfo.phone}
+          </h3>
         </div>
       </div>
     </div>
-  )
+  );
 }

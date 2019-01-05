@@ -3,19 +3,27 @@
   width: 100px;
 }
 
-.icon-container{
+.icon-container {
   text-align: center;
-  background-color: #F05F40;
+  background-color: #f05f40;
   margin: 0 auto;
   padding: 18px;
   width: 100px;
   height: 100px;
   border-radius: 220px;
+  margin-top: 7px;
 }
 
-.logo{
-  font-size: 60px ;
-  color: #FFFFFF;
+.border-icon-container {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #f05f40;
+  margin: 0 auto;
+  border-radius: 220px;
+  border-style: dotted;
 }
 
-
+.logo {
+  font-size: 60px;
+  color: #ffffff;
+}

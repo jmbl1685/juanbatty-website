@@ -3,7 +3,7 @@
   padding: 6px;
   width: 128px;
   font-weight: 300;
-  border: 1px solid rgba(24, 16, 16, .7);
+  border: 1px solid rgba(24, 16, 16, 0.7);
   color: rgb(24, 16, 16);
   font-size: 16px;
   text-align: center;
@@ -13,7 +13,6 @@
   background-color: #fff;
 }
 
-.about-me p{
+.about-me p {
   text-align: justify;
 }
-
