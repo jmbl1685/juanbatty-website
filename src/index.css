@@ -39,7 +39,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #f05f40;
+  background: #F7BC2B;
   border-radius: 5px;
   border: 3px solid #202020;
 }
@@ -69,7 +69,7 @@ h2 {
 }
 
 .line-dv {
-  background-color: #f05f40;
+  background-color: #F7BC2B;
   height: 3px;
   width: 200px;
   margin: 0 auto;
