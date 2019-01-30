@@ -23,14 +23,13 @@ export default function App() {
       setData(json_data);
     }
   }
-
   useEffect(() => {
     CallData();
     AOS.init({
       easing: "ease-out-back",
       duration: 1000
     });
-  });
+  }, json_data);
 
   return (
     <div>
