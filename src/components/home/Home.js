@@ -1,5 +1,5 @@
 import React from "react";
-
+import { home } from "../../data/data.json";
 import { ScrollAnimation, DisplayStyleValue } from "../../utils/utils";
 import "./Home.css";
 import arrow_down from "../../assets/img/arrow_down.svg";
@@ -9,42 +9,11 @@ export default function Home() {
     DisplayStyleValue(500, document.getElementById("fixed-accounts"));
   };
 
-  const HomeInfo = {
-    title: "Juan Batty",
-    description: "Fullstack .NET and Javascript Developer",
-    accounts: [
-      {
-        iconClass: "fab fa-github github",
-        url: "https://github.com/jmbl1685"
-      },
-      {
-        iconClass: "fab fa-twitter twitter",
-        url: "https://twitter.com/jmbl1685"
-      },
-      {
-        iconClass: "fab fa-linkedin linkedin",
-        url: "https://www.linkedin.com/in/juan-manuel-batty-linero-ba955a138/"
-      },
-      {
-        iconClass: "fab fa-youtube youtube",
-        url: "https://www.youtube.com/channel/UCO2Ugy7W2xHZ6sDGBiRizrg"
-      },
-      {
-        iconClass: "fab fa-instagram instagram",
-        url: "https://www.instagram.com/juanbatty/"
-      },
-      {
-        iconClass: "far fa-envelope envelope",
-        url: "mailto:jmbl1685@hotmail.com"
-      }
-    ]
-  };
-
   return (
     <div>
       <div id="fixed-accounts">
         <div>
-          {HomeInfo.accounts.map((item, index) => {
+          {home.accounts.map((item, index) => {
             return (
               <a
                 key={index}
@@ -63,7 +32,7 @@ export default function Home() {
       <div className="header">
         <div className="m-top">
           <h1 className="title" data-aos="zoom-in">
-            {HomeInfo.title}
+            {home.title}
           </h1>
           <h3
             className="subtitle job"
@@ -71,10 +40,10 @@ export default function Home() {
             data-aos-easing="ease"
             data-aos-delay="400"
           >
-            {HomeInfo.description}
+            {home.description}
           </h3>
           <div data-aos="flip-up" data-aos-easing="ease" data-aos-delay="800">
-            {HomeInfo.accounts.map((item, index) => {
+            {home.accounts.map((item, index) => {
               return (
                 <a
                   key={index}

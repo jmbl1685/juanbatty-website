@@ -1,0 +1,69 @@
+{
+  "home": {
+    "title": "Juan Batty",
+    "description": "Fullstack .NET and Javascript Developer",
+    "accounts": [
+      {
+        "iconClass": "fab fa-github github",
+        "url": "https://github.com/jmbl1685"
+      },
+      {
+        "iconClass": "fab fa-twitter twitter",
+        "url": "https://twitter.com/jmbl1685"
+      },
+      {
+        "iconClass": "fab fa-linkedin linkedin",
+        "url": "https://www.linkedin.com/in/juan-manuel-batty-linero-ba955a138/"
+      },
+      {
+        "iconClass": "fab fa-youtube youtube",
+        "url": "https://www.youtube.com/channel/UCO2Ugy7W2xHZ6sDGBiRizrg"
+      },
+      {
+        "iconClass": "fab fa-instagram instagram",
+        "url": "https://www.instagram.com/juanbatty/"
+      },
+      {
+        "iconClass": "far fa-envelope envelope",
+        "url": "mailto:jmbl1685@hotmail.com"
+      }
+    ]
+  },
+  "about_me": {
+    "title": "Acerca de mí",
+    "paragraph": [
+      "Soy desarrollador de software e Ingeniero de Sistemas en formación, me gusta todo lo relacionado a nuevas tecnologías, me apasionan todos los procesos tanto del Front-End como del Back-End, me desempeño muy bien en la dos áreas.",
+      "Me gusta llevar a cabo siempre las buenas prácticas de desarrollo para así poder brindar soluciones de alta cálidad para quien necesite mis servicios."
+    ]
+  },
+  "skills": {
+    "title": "Habilidades",
+    "skill_items": [
+      {
+        "logo": "logo fas fa-paint-brush",
+        "title": "Desarrollo Front-End",
+        "description": "HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp, WebPack, SEO, etc."
+      },
+      {
+        "logo": "logo fas fa-hdd",
+        "title": "Desarrollo Back-End",
+        "description": "C#, ASP.NET, ASP.NET Core, Node.js, Python, etc."
+      },
+      {
+        "logo": "logo fas fa-database",
+        "title": "Base de datos",
+        "description": "SQL Server, MySQL, MongoDB, Firebase."
+      },
+      {
+        "logo": "logo fas fa-tasks",
+        "title": "DevOps",
+        "description": "Microsoft Azure, AWS, Travis CI, Azure Pipelines, Test Unitarios, etc."
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contáctame",
+    "description": "Puedes comunicarte conmigo a través de mis redes sociales o escribiendome al siguiente número",
+    "phone": "(+57) 3107075514"
+  }
+}
