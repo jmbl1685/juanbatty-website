@@ -42,7 +42,7 @@
       {
         "logo": "logo fas fa-paint-brush",
         "title": "Desarrollo Front-End",
-        "description": "HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp, WebPack, SEO, etc."
+        "description": "HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp, WebPack, DotNetNuke CMS, etc."
       },
       {
         "logo": "logo fas fa-hdd",
@@ -63,7 +63,7 @@
   },
   "contact": {
     "title": "Contáctame",
-    "description": "Puedes comunicarte conmigo a través de mis redes sociales o escribiendome al siguiente número",
+    "description": "Puedes comunicarte conmigo a través de mis redes sociales o escribiéndome al siguiente número",
     "phone": "(+57) 3107075514"
   }
 }
