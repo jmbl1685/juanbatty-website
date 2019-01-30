@@ -1,10 +1,10 @@
 import React from "react";
-import { home } from "../../data/data.json";
 import { ScrollAnimation, DisplayStyleValue } from "../../utils/utils";
 import "./Home.css";
 import arrow_down from "../../assets/img/arrow_down.svg";
 
-export default function Home() {
+export default function Home(props) {
+  const { home } = props.data;
   window.onscroll = () => {
     DisplayStyleValue(500, document.getElementById("fixed-accounts"));
   };

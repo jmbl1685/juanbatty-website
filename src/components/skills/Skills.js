@@ -1,8 +1,8 @@
 import React from "react";
-import { skills } from "../../data/data.json";
 import "./Skills.css";
 
-export default function Skills() {
+export default function Skills(props) {
+  const { skills } = props.data;
   return (
     <div className="center-txt" data-aos="fade-up">
       <section>

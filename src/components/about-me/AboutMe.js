@@ -1,9 +1,9 @@
 import React from "react";
 import { Element } from "react-scroll";
-import { about_me } from "../../data/data.json";
 import "./AboutMe.css";
 
-export default function AboutMe() {
+export default function AboutMe(props) {
+  const { about_me } = props.data;
   return (
     <Element name="about-me">
       <br />
