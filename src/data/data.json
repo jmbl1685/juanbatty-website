@@ -42,17 +42,17 @@
       {
         "logo": "logo fas fa-paint-brush",
         "title": "Desarrollo Front-End",
-        "description": "HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp, WebPack, DotNetNuke CMS, etc."
+        "description": "HTML5, CSS3, JavaScript, Angular.js, Angular, React.js, Responsive Design, SASS, Gulp, WebPack, etc."
       },
       {
         "logo": "logo fas fa-hdd",
         "title": "Desarrollo Back-End",
-        "description": "C#, ASP.NET, ASP.NET Core, Node.js, Python, etc."
+        "description": "C#, ASP.NET, ASP.NET Core, Node.js, etc."
       },
       {
         "logo": "logo fas fa-database",
         "title": "Base de datos",
-        "description": "SQL Server, MySQL, MongoDB, Firebase."
+        "description": "SQL Server, MySQL, MongoDB, Firebase, etc."
       },
       {
         "logo": "logo fas fa-tasks",
