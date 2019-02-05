@@ -1,7 +1,7 @@
 {
   "home": {
     "title": "Juan Batty",
-    "description": "Fullstack .NET and Javascript Developer",
+    "description": "Full-Stack .NET and Javascript Developer",
     "accounts": [
       {
         "iconClass": "fab fa-github github",
@@ -57,7 +57,7 @@
       {
         "logo": "logo fas fa-tasks",
         "title": "DevOps",
-        "description": "Microsoft Azure, AWS, Travis CI, Azure Pipelines, Test Unitarios, etc."
+        "description": "Microsoft Azure, AWS, Travis CI, Azure Pipelines, Unit Testing, etc."
       }
     ]
   },
