@@ -2,7 +2,7 @@ import React from "react";
 import "./Skills.css";
 
 export default function Skills(props) {
-  const { skills } = props.data;
+  const { skills } = props.values;
   return (
     <div className="center-txt" data-aos="fade-up">
       <section>

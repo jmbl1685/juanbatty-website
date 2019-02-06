@@ -3,7 +3,7 @@ import { Element } from "react-scroll";
 import "./AboutMe.css";
 
 export default function AboutMe(props) {
-  const { about_me } = props.data;
+  const { about_me } = props.values;
   return (
     <Element name="about-me">
       <br />

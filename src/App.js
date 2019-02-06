@@ -3,21 +3,19 @@ import axios from "axios";
 import AOS from "aos";
 
 import json_data from "./data/data.json";
+import { url_data } from "./utils/utils";
 
 import Home from "./components/home/Home";
 import AboutMe from "./components/about-me/AboutMe";
 import ContactUs from "./components/contact-me/ContactMe";
 import Skills from "./components/skills/Skills";
-// import Repositories from './components/repositories/Repositories';
 
 export default function App() {
   const [data, setData] = useState(json_data);
 
   async function CallData() {
     try {
-      const url =
-        "https://raw.githubusercontent.com/jmbl1685/juanbatty-website/master/src/data/data.json";
-      const result = await axios(url);
+      const result = await axios(url_data);
       setData(result.data);
     } catch (err) {
       setData(json_data);
@@ -33,10 +31,10 @@ export default function App() {
 
   return (
     <div>
-      <Home data={data} />
-      <AboutMe data={data} />
-      <Skills data={data} />
-      <ContactUs data={data} />
+      <Home values={data} />
+      <AboutMe values={data} />
+      <Skills values={data} />
+      <ContactUs values={data} />
     </div>
   );
 }

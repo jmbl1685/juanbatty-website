@@ -1,5 +1,8 @@
 import { scroller } from "react-scroll";
 
+export const url_data =
+  "https://raw.githubusercontent.com/jmbl1685/juanbatty-website/master/src/data/data.json";
+
 export function ScrollAnimation(e) {
   const name = e.target.id;
   scroller.scrollTo(name, {

@@ -4,7 +4,7 @@ import "./Home.css";
 import arrow_down from "../../assets/img/arrow_down.svg";
 
 export default function Home(props) {
-  const { home } = props.data;
+  const { home } = props.values;
   window.onscroll = () => {
     DisplayStyleValue(500, document.getElementById("fixed-accounts"));
   };
