@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { ScrollAnimation } from '../../utils/utils';
 import './Navbar.css';
 import HamburgerMenu from 'react-hamburger-menu';
 
@@ -10,6 +11,12 @@ export default function Navbar(props) {
   function handleClick() {
     setOpen(!open);
     setColor(open ? '#F7BC2B' : '#FFFFFF');
+  }
+
+  function handleScrollAnimation(event) {
+    ScrollAnimation(event);
+    setOpen(false);
+    setColor('#F7BC2B');
   }
 
   return (
@@ -29,9 +36,9 @@ export default function Navbar(props) {
       </div>
 
       <div className={open ? 'menu open' : 'menu close'}>
-        {navbar.items.map((item, index) => (
-          <h3 data-aos="fade-up" data-aos-easing="ease" data-aos-delay="400" key={index}>
-            {item}
+        {navbar.items.map(({ name, scrollAnimationId }, index) => (
+          <h3 id={scrollAnimationId} onClick={event => handleScrollAnimation(event)} key={index}>
+            {name}
           </h3>
         ))}
       </div>

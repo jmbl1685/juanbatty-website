@@ -1,10 +1,11 @@
-import React from "react";
-import "./Skills.css";
+import React from 'react';
+import './Skills.css';
+import { Element } from 'react-scroll';
 
 export default function Skills(props) {
   const { skills } = props.values;
   return (
-    <div className="center-txt" >
+    <Element name="skills" className="center-txt">
       <section>
         <div>
           <h2>{skills.title}</h2>
@@ -28,6 +29,6 @@ export default function Skills(props) {
           })}
         </div>
       </div>
-    </div>
+    </Element>
   );
 }

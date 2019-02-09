@@ -1,4 +1,5 @@
 import React from 'react';
+import { Element } from 'react-scroll';
 import { ScrollAnimation, DisplayStyleValue } from '../../utils/utils';
 import './Home.css';
 import arrow_down from '../../assets/img/arrow_down.svg';
@@ -11,7 +12,7 @@ export default function Home(props) {
   };
 
   return (
-    <div>
+    <Element name="home">
       <div id="fixed-accounts">
         <div>
           {home.accounts.map((item, index) => {
@@ -66,9 +67,10 @@ export default function Home(props) {
             src={arrow_down}
             alt="arrow_down"
             id="about-me"
+            className="pulse"
           />
         </div>
       </div>
-    </div>
+    </Element>
   );
 }

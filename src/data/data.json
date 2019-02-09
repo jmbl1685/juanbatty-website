@@ -1,6 +1,23 @@
 {
   "navbar": {
-    "items": ["Acerca de mí", "Habilidades", "Contáctame"]
+    "items": [
+      {
+        "name": "Inicio",
+        "scrollAnimationId": "home"
+      },
+      {
+        "name": "Acerca de mí",
+        "scrollAnimationId": "about-me"
+      },
+      {
+        "name": "Habilidades",
+        "scrollAnimationId": "skills"
+      },
+      {
+        "name": "Contáctame",
+        "scrollAnimationId": "contact-me"
+      }
+    ]
   },
   "home": {
     "title": "Juan Batty",

@@ -6,7 +6,6 @@ export default function AboutMe(props) {
   const { about_me } = props.values;
   return (
     <Element name="about-me">
-      <br />
       <div className="container about-me" data-aos="fade-up">
         <div>
           <div className="center-txt">
