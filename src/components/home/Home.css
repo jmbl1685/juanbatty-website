@@ -112,7 +112,7 @@
   position: fixed;
   display: block;
   background-color: #34343bc7;
-  z-index: 100;
+  z-index: 1;
   bottom: 0;
   left: 0;
   right: 0;

@@ -16,3 +16,10 @@
 .about-me p {
   text-align: justify;
 }
+
+.avatar {
+  height: 150px;
+  width: 150px;
+  border-radius: 100px;
+  border: solid 2px #0F1C2C;
+}

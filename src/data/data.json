@@ -1,4 +1,7 @@
 {
+  "navbar": {
+    "items": ["Acerca de mí", "Habilidades", "Contáctame"]
+  },
   "home": {
     "title": "Juan Batty",
     "description": "Full-Stack .NET and Javascript Developer",

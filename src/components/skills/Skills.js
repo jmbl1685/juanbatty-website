@@ -4,7 +4,7 @@ import "./Skills.css";
 export default function Skills(props) {
   const { skills } = props.values;
   return (
-    <div className="center-txt" data-aos="fade-up">
+    <div className="center-txt" >
       <section>
         <div>
           <h2>{skills.title}</h2>
@@ -15,7 +15,7 @@ export default function Skills(props) {
         <div className="row">
           {skills.skill_items.map((item, index) => {
             return (
-              <div key={index} className="center-txt col-lg-3 col-md-6">
+              <div key={index} className="center-txt col-lg-3 col-md-6" data-aos="fade-up">
                 <div className="border-icon-container">
                   <div className="icon-container">
                     <i className={item.logo} />

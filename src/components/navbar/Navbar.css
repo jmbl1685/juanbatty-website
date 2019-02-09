@@ -1,0 +1,45 @@
+.hamburger-menu {
+  position: fixed;
+  z-index: 2;
+  left: 0;
+  margin-top: 32px;
+  margin-left: 20px;
+}
+
+.hamburger-menu:hover {
+  cursor: pointer;
+}
+
+.menu {
+  background-color: #F7BC2B;
+  background-blend-mode: multiply;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  color: #ffffff;
+  display: flex;
+  position: fixed;
+  z-index: 1;
+}
+
+.open {
+	opacity: 1;
+	visibility: visible;
+	-webkit-transition: opacity 0.5s;
+	transition: opacity 0.5s;
+}
+
+.close {
+	opacity: 0;
+	visibility: hidden;
+	-webkit-transition: opacity 0.5s, visibility 0s 0.5s;
+	transition: opacity 0.5s, visibility 0s 0.5s;
+}
+
+.menu h3 {
+  font-size: 2em;
+  letter-spacing: -0.04em;
+}

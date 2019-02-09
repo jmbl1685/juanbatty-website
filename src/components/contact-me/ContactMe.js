@@ -1,8 +1,9 @@
-import React from "react";
-import "./ContactMe.css";
+import React from 'react';
+import './ContactMe.css';
 
 export default function ContactMe(props) {
   const { contact } = props.values;
+
   return (
     <div className="center-txt contact-me mb">
       <div className="contact-padding" data-aos="zoom-in">
